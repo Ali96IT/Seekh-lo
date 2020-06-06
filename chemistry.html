@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Seekh-lo</title>
+
+    <link rel="shortcut icon" href="seekh-icon (1).ico" />
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <meta charset="utf-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+      
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  
+    <style>
+
+a:hover {
+        text-decoration:none;
+      color: #80ccff;
+      border:#009;
+      border:thick;
+    }
+      a{
+        color:#CCC;
+        }
+    </style>
+    </head>
+  
+
+	<body>
+   
+    <!-- Start header -->
+
+    <div class="header">
+        <div class="header-left" >
+          <a href="index.html"><img src="SEEKH.png" style="height: 40px; margin-bottom: 10px; margin-top: 10px;"></a>
+      
+       </div>
+       <!-- Modal sign in -->
+<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <div class="modal-header text-center">
+      <h3 class="modal-title w-100 orange-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body mx-4">
+      <!--Body-->
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="form-group">
+
+      <div class="md-form form-lg">
+<input type="email" class="form-control" name="username" placeholder="Email" required="required">
+      </div>
+        </div>
+        <div class="form-group">
+
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+            Password?</a></p>
+        </div>
+      <div class="text-center mb-3">
+
+        <button type="submit" class="btn btn-outline-info btn-rounded waves-effect" id="singnin">Sign in</button>
+      </div>
+      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+        with:</p>
+
+      <div class="row my-3 d-flex justify-content-center">
+        <!--Facebook-->
+        <button type="button" class="btn btn btn-rounded mr-md-2 z-depth-1a" id="icn"><i class="fab fa-facebook-f text-center"></i></button>
+        <!--Twitter-->
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a" id="icn"><i class="fab fa-twitter"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-white btn-rounded z-depth-1a" id="icn"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+    </div>
+  </form>
+    <!--Footer-->
+    <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" data-toggle="modal" data-target="#RgistrationForm" class="blue-text ml-1">
+          Sign Up</a></p>
+    </div>
+  </div>
+  <!--.Content-->
+</div>
+</div>
+<!-- Modal Registration -->
+<div class="modal fade" id="RgistrationForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <div class="modal-header text-center">
+      <h3 class="modal-title w-100 orange-text font-weight-bold my-3" id="myModalLabel"><strong>Register Now</strong></h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body mx-4">
+      <!--Body-->
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="form-group">
+          <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;<div class="col-xs-5">
+            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
+            </div>
+            &nbsp;&nbsp;            <div class="col-xs-5">
+              <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
+            </div>
+          </div>        	
+            </div>
+        <div class="form-group">
+      <div class="md-form form-lg">
+<input type="email" class="form-control" name="username" placeholder="Email" required="required">
+      </div>
+        </div>
+        <div class="form-group">
+
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+            Password?</a></p>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </div>
+      <div class="text-center mb-3">
+
+        <button type="submit" class="btn btn-outline-info btn-rounded waves-effect" id="singnin">Register Now</button>
+      </div>
+      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Creat acount using:</p>
+
+      <div class="row my-3 d-flex justify-content-center">
+        <!--Facebook-->
+        <button type="button" class="btn btn btn-rounded mr-md-2 z-depth-1a" id="icn"><i class="fab fa-facebook-f text-center"></i></button>
+        <!--Twitter-->
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a" id="icn"><i class="fab fa-twitter"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-white btn-rounded z-depth-1a" id="icn"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+    </div>
+  </form>
+    <!--Footer-->
+    <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Already a member <a href="#" data-toggle="modal" data-target="#elegantModalForm" class="blue-text ml-1">
+          Log In</a></p>
+    </div>
+  </div>
+  <!--/.Content-->
+</div>
+</div>
+<!-- Modal registraton end -->
+        <div class="header-right" >
+  
+          <input type="button" id="top-btn" value="Login" onclick="msg()" data-toggle="modal" data-target="#elegantModalForm">
+
+          <input type="button" id="top-btn" value="Registration"  onclick="msg()" data-toggle="modal" data-target="#RgistrationForm">
+          
+        </button>
+
+        </div>   
+      </div>
+
+
+<!-- Start Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" style="margin-left:30px">
+        <li class="nav-item ">
+          <a class="nav-link"  id="drop"  href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+ 
+        <li class="nav-item dropdown">
+          <a class="nav-link"  id="drop"  href="programs.html">  Programs       </a>
+          <div class="dropdown-menu"  >
+            <div class="dropdown dropright" >
+             <a class="dropdown-item" id="drop" href="science.html">Science </a>
+           <div class="dropdown-menu">
+              <div class="dropdown dropright" >
+                      <a class="dropdown-item" id="drop" href="engineering,html.html">Pre Engneering</a>
+               
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" id="drop" href="math.html">Mathemathic</a>   
+                      <a class="dropdown-item" id="drop" href="physics.html">Physics </a>   
+                      <a class="dropdown-item" id="drop" href="chemistry.html">Chemistry </a>   
+                      <a class="dropdown-item" id="drop" href="urdu.html">Urdu </a>   
+                      <a class="dropdown-item" id="drop" href="islamiate.html">Islamic Studies </a>   
+                      <a class="dropdown-item" id="drop" href="english.html">English </a>   
+               
+               
+                         </div>
+                  </div>     
+                    <div class="dropdown dropright" >
+              <a class="dropdown-item" id="drop" href="medical.html">Pre Medical</a>
+          
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="drop" href="botany.html">Botany</a>   
+              <a class="dropdown-item" id="drop" href="zoology.html">Zoology </a>   
+              <a class="dropdown-item" id="drop" href="chemistry.html">Chemistry </a>   
+              <a class="dropdown-item" id="drop" href="physics.html">Physics </a>   
+              <a class="dropdown-item" id="drop" href="urdu.html">Urdu </a>   
+             <a class="dropdown-item" id="drop" href="islamiate.html">Islamic Studies </a>   
+             <a class="dropdown-item" id="drop" href="english.html">English </a>   
+          
+          
+                 </div>
+          </div> 
+          <div class="dropdown dropright" >
+              <a class="dropdown-item" id="drop" href="computer.html">Computer Science</a>
+       
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="drop" href="math.html">Mathemathic</a>   
+              <a class="dropdown-item" id="drop" href="computer.html">Computer </a>   
+              <a class="dropdown-item" id="drop" href="physics.html">Physics </a>     
+              <a class="dropdown-item" id="drop" href="urdu.html">Urdu </a>   
+                      <a class="dropdown-item" id="drop" href="islamiate.html">Islamic Studies </a>   
+                      <a class="dropdown-item" id="drop" href="english.html">English </a>   
+       
+       
+                 </div>
+          </div> 
+      
+      
+                </div>
+         </div>
+         
+      
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="commerce.html">Commerce</a>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="Accounting.html">Accountancy</a>   
+             <a class="dropdown-item" id="drop" href="Business%20Studies.html">Business Studies</a>   
+             <a class="dropdown-item" id="drop" href="statistics.html">Statistics </a>   
+             <a class="dropdown-item" id="drop" href="economics.html">Economics </a>   
+             <a class="dropdown-item" id="drop" href="math.html">Mathemathic</a>   
+             <a class="dropdown-item" id="drop" href="english.html">English </a>   
+      
+           </div>
+      </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="arts.html">Arts</a>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="histry.html">History</a>   
+             <a class="dropdown-item" id="drop" href="Psychology.html">Psychology</a>   
+             <a class="dropdown-item" id="drop" href="Philosophy.html">Philosophy </a>   
+             <a class="dropdown-item" id="drop" href="economics.html">Economics </a>   
+             <a class="dropdown-item" id="drop" href="political-Science.html">Political Science  </a>   
+             <a class="dropdown-item" id="drop" href="english.html">English </a>   
+      
+           </div>
+      </div>
+      </div>
+         </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="courses.html">  Courses </a>
+    <div class="dropdown-menu"  >
+         <div class="dropdown dropright" >
+          <a class="dropdown-item" id="drop" href="computercourse.html">Computer Science</a>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" id="drop" href="computercourse.html">Html</a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html">Java </a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html">Javascript </a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html"> C programming </a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html">Pythone </a>   
+
+             </div>
+      </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="datascience.html">Data Science</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="datascience.html">Artifical Intelligence</a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Big Data </a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Cloud Computing </a>   
+        <a class="dropdown-item" id="drop" href="public/datascience.html"> Data Analysis </a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Machine Learning </a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Quantum Computing </a>   
+
+           </div>
+    </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="artscourse.html">Arts</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="artscourse.html">Graphic Designing.</a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html">Interior Designing</a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html">Photography </a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html"> Web Designing. </a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html">3d Designing </a>   
+
+           </div>
+    </div>
+    <div class="dropdown dropright" >
+      <a class="dropdown-item" id="drop" href="language.html">Language</a>
+
+    <div class="dropdown-menu">
+      <a class="dropdown-item" id="drop" href="language.html">Urdu</a>   
+      <a class="dropdown-item" id="drop" href="language.html">English</a>   
+      <a class="dropdown-item" id="drop" href="language.html">Chinese</a>   
+      <a class="dropdown-item" id="drop" href="language.html">Japnese </a>   
+      <a class="dropdown-item" id="drop" href="language.html"> Italian </a>   
+      <a class="dropdown-item" id="drop" href="language.html">Spanish </a>   
+
+         </div>
+  </div>
+
+
+       </div>
+    
+   </li>
+
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="past-papers.html">  
+    Past Paper   
+    </a>
+    
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="mcqs.html">  Mcqs prep  </a>
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="online-quiz.html">  Online Quizs </a>
+   </li>
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="blog.html">  Blogs </a>
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="about-us.html">   About Us   </a>
+   </li>   
+   
+      </ul>
+      <div class="box">
+        <div class="container-2">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" placeholder="Search..." />
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </nav>
+
+  <!-- Science -->
+
+  <img src="chemistry.jpg" class="d-block w-100" alt="..." height="250px" style="margin-top: 20px; margin-bottom: 20px;">
+  <div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel">
+  <div class="container">
+    <h2 style="color:#ffff00; text-align: center;">Chem<span style="color:orange">istry</span></h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-12 ">
+        <div class="card" style="">
+            <img class="card-img-top" src="a.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <button type="button" class="btn">Apply Now</button>
+    
+        </div>  
+      
+    </div>
+    <div class="col-md-4 col-sm-12 ">
+      <div class="card" style="">
+        <img class="card-img-top" src="a.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical engneering
+            </h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>        
+          <div class="icon" style="padding-left: 100px;">
+            <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+            <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+            <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+            </div>
+          <button type="button" class="btn">Apply Now</button>
+  
+      </div> 
+    </div> 
+    <div class="col-md-4 col-sm-12 ">
+  
+      <div class="card" style="">
+        <img class="card-img-top" src="a.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical engneering
+            </h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>        
+          <div class="icon" style="padding-left: 100px;">
+            <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+            <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+            <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+            </div>
+          <button type="button" class="btn">Apply Now</button>
+  
+      </div>  
+    
+    </div>
+     </div>
+     
+     
+
+     <div class="row" style="margin-top: 20px;">
+        
+        <div class="col-md-4 col-sm-12 ">
+          <div class="card" style="">
+              <img class="card-img-top" src="a.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Mechanical engneering
+                </h5>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+              </div>        
+              <div class="icon" style="padding-left: 100px;">
+                <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+                <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+                <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+                </div>
+              <button type="button" class="btn">Apply Now</button>
+      
+          </div>  
+        
+      </div>
+      <div class="col-md-4 col-sm-12 ">
+        <div class="card" style="">
+          <img class="card-img-top" src="a.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <button type="button" class="btn">Apply Now</button>
+    
+        </div> 
+      </div> 
+      <div class="col-md-4 col-sm-12 ">
+    
+        <div class="card" style="">
+          <img class="card-img-top" src="a.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <button type="button" class="btn">Apply Now</button>
+    
+        </div>  
+      
+      </div>
+       </div>
+       
+
+     <div class="row" style="margin-top: 20px;">
+        
+        <div class="col-md-4 col-sm-12 ">
+          <div class="card" style="">
+              <img class="card-img-top" src="a.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Mechanical engneering
+                </h5>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+              </div>        
+              <div class="icon" style="padding-left: 100px;">
+                <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+                <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+                <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+                </div>
+              <button type="button" class="btn">Apply Now</button>
+      
+          </div>  
+        
+      </div>
+      <div class="col-md-4 col-sm-12 ">
+        <div class="card" style="">
+          <img class="card-img-top" src="a.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <button type="button" class="btn">Apply Now</button>
+    
+        </div> 
+      </div> 
+      <div class="col-md-4 col-sm-12 ">
+    
+        <div class="card" style="">
+          <img class="card-img-top" src="a.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="#"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="#"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="#"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <button type="button" class="btn">Apply Now</button>
+    
+        </div>  
+      
+      </div>
+       </div>
+       <nav aria-label="Page navigation example" style="margin-top: 10px;">
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+  </div>
+<section>
+    <div class="container">
+   <div class="about-topic">
+       <h3>Chemistry</h3>
+       <p class="about">
+        The earliest roots of science can be traced to Ancient Egypt and Mesopotamia in 
+        around 3500 to 3000 BCE.[5][6] Their contributions to mathematics, astronomy,
+         and medicine entered and shaped Greek natural philosophy of classical antiquity,
+         whereby formal attempts were made to provide
+         explanations of events in the physical world based on natural causes.
+       </p>
+       
+        
+ 
+        </div> 
+</div>
+</section>
+
+
+<!-- Start Footer -->
+<footer  class="footer" style="background-color:#333">
+  <div class="container" style="padding-top:60px; padding-bottom:10PX;">
+      <div class="row border-bottom-black">
+          <div class="col-sm-6 col-md-3">
+              <div class="widget dark" style="color: #bbb; ; font-size:14px">
+                <div class="logofooter"> 
+                <h2 style="color:orange; margin-bottom: 20px;">SEEKH<span style="color:#ffff00">-LO</span></h2>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit,
+                   at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                    Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.</p>
+                <p><i class="fa fa-map-pin"></i> 210,Karachi Pakistan</p>
+                <p><i class="fa fa-phone"></i> Phone (Pakistan) : +92 9999 878 398</p>
+                <p><i class="fa fa-envelope"></i> E-mail : Seekh-lo @gmail.com</p>
+
+                  
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+              <div class="widget dark" style="color: white">
+                  <h3 class="">Recent Blogs</h3>
+                                    <hr style=" border-top: 2px solid grey;">
+            <hr style=" border-top: 2px solid orange; width:20%; margin-top:-18px; margin-left:0px">
+          <span><img src="medical.png" width="100px"></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="blog.html">Read more</a></p>
+          <span><img src="medical.png" width="100px"></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="blog-detail.html">Read more</a></p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="widget dark" style="color: white;">
+                <h3 class="">Useful Links</h3>
+                                  <hr style=" border-top: 2px solid grey;">
+          <hr style=" border-top: 2px solid orange; width:20%; margin-top:-18px; margin-left:0px">
+          <ul class="list-group ">
+            <li class="Useful-Link "><a href="index.html"><i class="fas fa-arrow-right" id="fas"></i>Home</a></li>
+            <li class="Useful-Link"><a href="about-us.html"><i class="fas fa-arrow-right" id="fas"></i>About Us</a></li>
+            <li class="Useful-Link" ><a href="#"><i class="fas fa-arrow-right" id="fas"></i>Term & Services</a></li>
+            <li  class="Useful-Link"><a href="#"><i class="fas fa-arrow-right" id="fas"></i>Priacy Policy</a></li>
+          </ul>
+            </div>
+        </div>
+          <div class="col-sm-6 col-md-3">
+              <div class="widget dark"style="color: white">
+                <h3 class="">Subscribe Us!</h3>
+                <form action="/examples/actions/confirmation.php" method="post">
+
+                <input type="text" class="form-control" id="control" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="button-addon2" required="required">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Subscribe Us</button>
+</form>
+                  <h3 class="" style="margin-top: 30px;">Connect With Us</h3>
+                  <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
+                      <li><a href="" ><i class="fab fa-facebook" id="fa"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter" id="fa"></i></a></li>
+                              <li><a href="" ><i class="fab fa-instagram " id="fa"></i></a></li>
+                              <li><a href="" ><i class="fab fa-youtube " id="fa"></i></a></li>
+                   </ul>
+              </div>
+
+          </div>
+
+      </div>
+      <p class="bottom">Copyright © 2020 Seekh-lo.edu.com </p>
+
+  </div>
+ 
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,1026 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Seekh-lo</title>
+
+    <link rel="shortcut icon" href="seekh-icon (1).ico" />
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <meta charset="utf-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+      
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  
+    <style>
+
+a:hover {
+        text-decoration:none;
+      color: #80ccff;
+      border:#009;
+      border:thick;
+    }
+      a{
+        color:#CCC;
+        }
+    </style>
+    </head>
+  
+
+	<body>
+   
+    <!-- Start header -->
+
+    <div class="header">
+        <div class="header-left" >
+          <a href="index.html"><img src="seekh.png" style="height: 40px; margin-bottom: 10px; margin-top: 10px;"></a>
+      
+       </div>
+       <!-- Modal sign in -->
+<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <div class="modal-header text-center">
+      <h3 class="modal-title w-100 orange-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body mx-4">
+      <!--Body-->
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="form-group">
+
+      <div class="md-form form-lg">
+<input type="email" class="form-control" name="username" placeholder="Email" required="required">
+      </div>
+        </div>
+        <div class="form-group">
+
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+            Password?</a></p>
+        </div>
+      <div class="text-center mb-3">
+
+        <button type="submit" class="btn btn-outline-info btn-rounded waves-effect" id="singnin">Sign in</button>
+      </div>
+      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+        with:</p>
+
+      <div class="row my-3 d-flex justify-content-center">
+        <!--Facebook-->
+        <button type="button" class="btn btn btn-rounded mr-md-2 z-depth-1a" id="icn"><i class="fab fa-facebook-f text-center"></i></button>
+        <!--Twitter-->
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a" id="icn"><i class="fab fa-twitter"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-white btn-rounded z-depth-1a" id="icn"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+    </div>
+  </form>
+    <!--Footer-->
+    <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" data-toggle="modal" data-target="#RgistrationForm" class="blue-text ml-1">
+          Sign Up</a></p>
+    </div>
+  </div>
+  <!--.Content-->
+</div>
+</div>
+<!-- Modal Registration -->
+<div class="modal fade" id="RgistrationForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <div class="modal-header text-center">
+      <h3 class="modal-title w-100 orange-text font-weight-bold my-3" id="myModalLabel"><strong>Register Now</strong></h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body mx-4">
+      <!--Body-->
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="form-group">
+          <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;<div class="col-xs-5">
+            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
+            </div>
+            &nbsp;&nbsp;            <div class="col-xs-5">
+              <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
+            </div>
+          </div>        	
+            </div>
+        <div class="form-group">
+      <div class="md-form form-lg">
+<input type="email" class="form-control" name="username" placeholder="Email" required="required">
+      </div>
+        </div>
+        <div class="form-group">
+
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+            Password?</a></p>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </div>
+      <div class="text-center mb-3">
+
+        <button type="submit" class="btn btn-outline-info btn-rounded waves-effect" id="singnin">Register Now</button>
+      </div>
+      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Creat acount using:</p>
+
+      <div class="row my-3 d-flex justify-content-center">
+        <!--Facebook-->
+        <button type="button" class="btn btn btn-rounded mr-md-2 z-depth-1a" id="icn"><i class="fab fa-facebook-f text-center"></i></button>
+        <!--Twitter-->
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a" id="icn"><i class="fab fa-twitter"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-white btn-rounded z-depth-1a" id="icn"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+    </div>
+  </form>
+    <!--Footer-->
+    <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Already a member <a href="#" data-toggle="modal" data-target="#elegantModalForm" class="blue-text ml-1">
+          Log In</a></p>
+    </div>
+  </div>
+  <!--/.Content-->
+</div>
+</div>
+<!-- Modal registraton end -->
+        <div class="header-right" >
+  
+          <input type="button" id="top-btn" value="Login" onclick="msg()" data-toggle="modal" data-target="#elegantModalForm">
+
+          <input type="button" id="top-btn" value="Registration"  onclick="msg()" data-toggle="modal" data-target="#RgistrationForm">
+          
+        </button>
+
+        </div>   
+      </div>
+
+
+<!-- Start Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" style="margin-left:30px">
+        <li class="nav-item ">
+          <a class="nav-link"  id="drop"  href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+ 
+        <li class="nav-item dropdown">
+          <a class="nav-link"  id="drop"  href="programs.html">  Programs       </a>
+          <div class="dropdown-menu"  >
+            <div class="dropdown dropright" >
+             <a class="dropdown-item" id="drop" href="science.html">Science </a>
+           <div class="dropdown-menu">
+              <div class="dropdown dropright" >
+                      <a class="dropdown-item" id="drop" href="engineering,html.html">Pre Engneering</a>
+               
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" id="drop" href="math.html">Mathemathic</a>   
+                      <a class="dropdown-item" id="drop" href="physics.html">Physics </a>   
+                      <a class="dropdown-item" id="drop" href="chemistry.html">Chemistry </a>   
+                      <a class="dropdown-item" id="drop" href="urdu.html">Urdu </a>   
+                      <a class="dropdown-item" id="drop" href="islamiate.html">Islamic Studies </a>   
+                      <a class="dropdown-item" id="drop" href="english.html">English </a>   
+               
+               
+                         </div>
+                  </div>     
+                    <div class="dropdown dropright" >
+              <a class="dropdown-item" id="drop" href="medical.html">Pre Medical</a>
+          
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="drop" href="botany.html">Botany</a>   
+              <a class="dropdown-item" id="drop" href="zoology.html">Zoology </a>   
+              <a class="dropdown-item" id="drop" href="chemistry.html">Chemistry </a>   
+              <a class="dropdown-item" id="drop" href="physics.html">Physics </a>   
+              <a class="dropdown-item" id="drop" href="urdu.html">Urdu </a>   
+             <a class="dropdown-item" id="drop" href="islamiate.html">Islamic Studies </a>   
+             <a class="dropdown-item" id="drop" href="english.html">English </a>   
+          
+          
+                 </div>
+          </div> 
+          <div class="dropdown dropright" >
+              <a class="dropdown-item" id="drop" href="computer.html">Computer Science</a>
+       
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="drop" href="math.html">Mathemathic</a>   
+              <a class="dropdown-item" id="drop" href="computer.html">Computer </a>   
+              <a class="dropdown-item" id="drop" href="physics.html">Physics </a>     
+              <a class="dropdown-item" id="drop" href="urdu.html">Urdu </a>   
+                      <a class="dropdown-item" id="drop" href="islamiate.html">Islamic Studies </a>   
+                      <a class="dropdown-item" id="drop" href="english.html">English </a>   
+       
+       
+                 </div>
+          </div> 
+      
+      
+                </div>
+         </div>
+         
+      
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="commerce.html">Commerce</a>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="Accounting.html">Accountancy</a>   
+             <a class="dropdown-item" id="drop" href="Business%20Studies.html">Business Studies</a>   
+             <a class="dropdown-item" id="drop" href="statistics.html">Statistics </a>   
+             <a class="dropdown-item" id="drop" href="economics.html">Economics </a>   
+             <a class="dropdown-item" id="drop" href="math.html">Mathemathic</a>   
+             <a class="dropdown-item" id="drop" href="english.html">English </a>   
+      
+           </div>
+      </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="arts.html">Arts</a>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="histry.html">History</a>   
+             <a class="dropdown-item" id="drop" href="Psychology.html">Psychology</a>   
+             <a class="dropdown-item" id="drop" href="Philosophy.html">Philosophy </a>   
+             <a class="dropdown-item" id="drop" href="economics.html">Economics </a>   
+             <a class="dropdown-item" id="drop" href="political-Science.html">Political Science  </a>   
+             <a class="dropdown-item" id="drop" href="english.html">English </a>   
+      
+           </div>
+      </div>
+      </div>
+         </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="courses.html">  Courses </a>
+    <div class="dropdown-menu"  >
+         <div class="dropdown dropright" >
+          <a class="dropdown-item" id="drop" href="computercourse.html">Computer Science</a>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" id="drop" href="computercourse.html">Html</a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html">Java </a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html">Javascript </a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html"> C programming </a>   
+          <a class="dropdown-item" id="drop" href="computercourse.html">Pythone </a>   
+
+             </div>
+      </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="datascience.html">Data Science</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="datascience.html">Artifical Intelligence</a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Big Data </a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Cloud Computing </a>   
+        <a class="dropdown-item" id="drop" href="public/datascience.html"> Data Analysis </a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Machine Learning </a>   
+        <a class="dropdown-item" id="drop" href="datascience.html">Quantum Computing </a>   
+
+           </div>
+    </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="artscourse.html">Arts</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="artscourse.html">Graphic Designing.</a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html">Interior Designing</a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html">Photography </a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html"> Web Designing. </a>   
+        <a class="dropdown-item" id="drop" href="artscourse.html">3d Designing </a>   
+
+           </div>
+    </div>
+    <div class="dropdown dropright" >
+      <a class="dropdown-item" id="drop" href="language.html">Language</a>
+
+    <div class="dropdown-menu">
+      <a class="dropdown-item" id="drop" href="language.html">Urdu</a>   
+      <a class="dropdown-item" id="drop" href="language.html">English</a>   
+      <a class="dropdown-item" id="drop" href="language.html">Chinese</a>   
+      <a class="dropdown-item" id="drop" href="language.html">Japnese </a>   
+      <a class="dropdown-item" id="drop" href="language.html"> Italian </a>   
+      <a class="dropdown-item" id="drop" href="language.html">Spanish </a>   
+
+         </div>
+  </div>
+
+
+       </div>
+    
+   </li>
+
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="past-papers.html">  
+    Past Paper   
+    </a>
+    
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="mcqs.html">  Mcqs prep  </a>
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="online-quiz.html">  Online Quizs </a>
+   </li>
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="blog.html">  Blogs </a>
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="about-us.html">   About Us   </a>
+   </li>   
+   
+      </ul>
+      <div class="box">
+        <div class="container-2">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" placeholder="Search..." />
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </nav>
+
+
+<!-- Start Slider -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="seekh-lo slider2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="seekh-lo slider3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="seekh-lo slider2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  <section class="learn" style="margin-top: 20px;">
+  <h2 style="color:orange; text-align: center;">Learn<span style="color:#ffff00">By</span></h2>
+
+  <div class="learn-by">
+    <div class="videos">
+        <div class="gallery">
+
+            
+              <img src="seekh-lo slider3.jpg" alt="Cinque Terre" width="400px" height="200px">
+                        <div class="middle">
+            <div class="desc">Learn with the help of Videos</div>
+          </div>
+          </div>
+    </div>
+    <div class="pdf">
+        <div class="gallery">
+
+          
+              <img src="seekh-lo slider2.jpg" alt="Cinque Terre"  width="400px" height="200px">
+            
+            <div class="middle">
+            <div class="desc">Learn with the help of PDF</div>
+          </div>
+          </div>
+    </div>
+<div class="slideshare">
+    <div class="gallery">
+
+        
+          <img src="seekh-lo slider3.jpg" alt="Cinque Terre" width="400px" height="200px">
+        
+        <div class="middle">
+        <div class="desc">Learn with the help of slideshare</div>
+      </div>
+      </div>
+</div>
+</div>
+</section>
+  <!-- Start text marquee -->
+
+  <div class="container" style="margin-top: 20px;">
+    <h2 style="color:orange; text-align: center;margin-bottom: 20px;">Short<span style="color:#ffff00">Courses</span></h2>
+    <div class="row">
+    <div class="col-md-2 col-sm-6 ">
+        <div class="hover-shadow cursor">
+    <div class="polaroid" align="center"  >
+    <br>
+        <img src="we.png" style="width:40%"  >
+    
+         <div class="text" >
+         <br>
+         <a href="detail.html" >
+          <p>Graphic Designning</p></a>
+    <br>
+    </div>
+    </div>
+    </div>
+      </div>
+      <div class="col-md-2 col-sm-6 ">
+      <div class="hover-shadow cursor">
+    <div class="polaroid" align="center"  >
+    <br>
+        <img src="wr.png" style="width:40%"  >
+    
+         <div class="text" >
+         <br>
+    <a href="detail.html" ><p>Python For Everyone</p></a>
+    <br>
+    </div>
+    </div>
+    </div>
+      </div>
+    <div class="col-md-2 col-sm-6 ">
+      <div class="hover-shadow cursor">
+    <div class="polaroid" align="center"  >
+    <br>
+        <img src="wt.png" style="width:40%"  >
+    
+         <div class="text" >
+         <br>
+    <a href="detail.html" ><p>Web Development</p></a>
+    <br>
+    </div>
+    </div>
+    </div>
+      </div>
+      <div class="col-md-2 col-sm-6 ">
+      <div class="hover-shadow cursor">
+    <div class="polaroid" align="center"  >
+    <br>
+        <img src="wy.png" style="width:40%"  >
+    
+         <div class="text" >
+         <br>
+    <a href="detail.html" ><p>Media Course</p></a>
+    <br>
+    </div>
+    </div>
+    </div>
+      </div>
+      <div class="col-md-2 col-sm-6 ">
+      <div class="hover-shadow cursor">
+    <div class="polaroid" align="center"  >
+    <br>
+        <img src="wu.png" style="width:50%"  >
+    
+         <div class="text" >
+         <br>
+    <a href="detail.html"><p>Video Editing</p></a>
+    <br>
+    </div>
+    </div>
+    </div>
+      </div>
+    <div class="col-md-2 col-sm-6 ">
+      <div class="hover-shadow cursor">
+    <div class="polaroid" align="center"  >
+    <br>
+        <img src="wi.png" style="width:40%"  >
+    
+         <div class="text" >
+         <br>
+    <a href="detail.html" ><p>Ethical Hacking</p></a>
+    <br>
+    </div>
+    </div>
+    </div>
+      </div>
+    
+    </div>
+    </div>
+            <br>
+
+<section>
+
+
+  <div class="main_title">
+    <h2 style="color:orange; text-align: center;margin-bottom: 20px;">Popular<span style="color:#ffff00">Programe</span></h2>
+    <div class="card align-items-center" style="align-items: center;">
+      <div class="list-group list-group-horizontal" id="myList" role="tablist" style="align-items: center;">
+        <a class="list" data-toggle="list" href="#home" role="tab">Science</a>
+        <a class="list" data-toggle="list" href="#profile" role="tab">Commerce</a>
+        <a class="list" data-toggle="list" href="#messages" role="tab">Arts</a>
+      </div>
+      </div>  
+      <br>
+      
+     <div class="tab-content">
+      <div class="tab-pane active" id="home" role="tabpanel">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-12 ">
+    
+      <div class="card" style="">
+        <img class="card-img-top" src="a.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+            </h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>        
+          <div class="icon" style="padding-left: 100px;">
+            <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+            <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+            <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+            </div>
+          <a href="detail.html" type="button" class="btn">Apply Now</a>
+  
+      </div>
+  </div>
+  <div class="col-md-4 col-sm-12 ">
+ 
+    <div class="card" style="">
+      <img class="card-img-top" src="a.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+          </h5>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+        </div>        
+        <div class="icon" style="padding-left: 100px;">
+            <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+            <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+            <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+            </div>
+          <a href="detail.html" type="button" class="btn">Apply Now</a>
+
+    </div>
+    <br>
+    
+  </div>
+    <div class="col-md-4 col-sm-12 ">
+      <div class="card" style="">
+        <img class="card-img-top" src="a.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+            </h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>        
+          <div class="icon" style="padding-left: 100px;">
+            <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+            <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+            <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+            </div>
+            <a href="detail.html" type="button" class="btn">Apply Now</a>
+  
+      </div>  
+</div>
+</div>
+</div>
+<div class="text-center">
+  <a href="science.html" type="button" class="btn btn-primary">View More</a>
+</div>
+</div>
+
+
+<div class="tab-pane " id="profile" role="tabpanel">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 ">
+      
+        <div class="card" style="">
+          <img class="card-img-top" src="blog5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <a href="detail.html" type="button" class="btn">Apply Now</a>
+    
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 ">
+   
+      <div class="card" style="">
+        <img class="card-img-top" src="blog5.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+            </h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>        
+          <div class="icon" style="padding-left: 100px;">
+              <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <a href="detail.html" type="button" class="btn">Apply Now</a>
+  
+      </div>
+      <br>
+      
+    </div>
+      <div class="col-md-4 col-sm-12 ">
+        <div class="card" style="">
+          <img class="card-img-top" src="blog5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+              <a href="detail.html" type="button" class="btn">Apply Now</a>
+    
+        </div>  
+  </div>
+  </div>
+  </div>
+<div class="text-center">
+  <a href="commerce.html" type="button" class="btn btn-primary">View More</a>
+</div> 
+</div>
+
+<div class="tab-pane " id="messages" role="tabpanel">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 ">
+      
+        <div class="card" style="">
+          <img class="card-img-top" src="a.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <a href="detail.html" type="button" class="btn">Apply Now</a>
+    
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 ">
+   
+      <div class="card" style="">
+        <img class="card-img-top" src="a.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+            </h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>        
+          <div class="icon" style="padding-left: 100px;">
+              <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+            <a href="detail.html" type="button" class="btn">Apply Now</a>
+  
+      </div>
+      <br>
+      
+    </div>
+      <div class="col-md-4 col-sm-12 ">
+        <div class="card" style="">
+          <img class="card-img-top" src="a.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical engneering         <a class="button" href="#" style="background-color: orange;color: white;">Free</a>
+              </h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>        
+            <div class="icon" style="padding-left: 100px;">
+              <span><a href="video.html"><i class="fas fa-video" id="fa"></i> </a></span>
+              <span><a href="slideshare.html"><i class="fab fa-slideshare" id="fa"></i></a></span>
+              <span><a href="pdf.html"><i class="fas fa-file-pdf" id="fa"></i></a></span>
+              </div>
+              <a href="detail.html" type="button" class="btn">Apply Now</a>
+    
+        </div>  
+  </div>
+  </div>
+  </div>
+<br>
+<div class="text-center">
+  <a href="arts.html" type="button" class="btn btn-">View More</a>
+</div> 
+</div>
+
+</div>
+</section>
+<br>
+            <!-- Start Introduction Section -->
+
+            <section class="introduction" style="background-image: url(back.jpg); background-repeat: no-repeat;" >
+        <div class="container" >
+            <div class="section-title text-center">
+              <h3>The Best Tutor </h3>
+                <div class="row" style="margin-top: 80px;">
+                  <div class="col-md-4 col-sm-12 ">
+                    <img src="teacher4.png"  style="height: 180px;">
+                    <h3>School Teacher</h3>
+                    <h6 style="color: #CCC;">Teacher</h6>
+                    <p style="color: #CCC;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.Lorem ipsum dolor sit amet,
+                       consectetur adipiscing elit. Sed mattis augue in odio suscipit.</p>
+                       <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm" style="padding-left: 80px;">
+                        <li><a href="" target="_blank"><i class="fab fa-facebook-f" id="fa"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-twitter" id="fa"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-instagram " id="fa"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-youtube " id="fa"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4 col-sm-12 ">
+                    <img src="teacher4.png"  style="height: 180px;">
+                    <h3>School Teacher</h3>
+                    <h6 style="color: #CCC;">Teacher</h6>
+                    <p style="color: #CCC;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.Lorem ipsum dolor sit amet,
+                       consectetur adipiscing elit. Sed mattis augue in odio suscipit.</p>
+                       <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm" style="padding-left: 80px;">
+                        <li><a href="" target="_blank"><i class="fab fa-facebook-f" id="fa"></i></a></li>
+                                <li><a href=" target="_blank"><i class="fab fa-twitter" id="fa"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-instagram " id="fa"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-youtube " id="fa"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4 col-sm-12 ">
+                    <img src="teacher2.png"  style="height: 180px;">
+                    <h3>School Teacher</h3>
+                    <h6 style="color: #CCC;">Teacher</h6>
+                    <p style="color: #CCC;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.Lorem ipsum dolor sit amet,
+                       consectetur adipiscing elit. Sed mattis augue in odio suscipit.</p>
+                       <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm" style="padding-left: 80px;">
+                        <li><a href="" target="_blank"><i class="fab fa-facebook-f" id="fa"></i></a></li>
+                                <li><a href=" target="_blank"><i class="fab fa-twitter" id="fa"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-instagram " id="fa"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-youtube " id="fa"></i></a></li>
+                     </ul>
+                  </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Start Counter -->
+
+
+        
+        <!-- start Section Whate we are doing -->
+        <div class="counter">
+          <div class="counting-sec">
+            <div class="inner-width">
+             
+              <div class="col">
+                <i class="fas fa-chalkboard-teacher"></i>  
+                              <div class="num">19</div>
+               Certified Teachers   
+              </div>
+              <div class="col">
+                <i class="fas fa-user-graduate"></i>   
+                             <div class="num">1246</div>
+                Students
+              </div>
+              <div class="col">
+                <i class="fas fa-book-open"></i>      
+                          <div class="num">687</div>
+                Courses
+              </div>
+      
+              <div class="col">
+                <i class="fas fa-award"></i>
+                                <div class="num">87</div>
+                Award Won
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+        <script type="text/javascript">
+          $(".num").counterUp({delay:10,time:1000});
+        </script>
+    <section style="margin-top: 30px;">
+      <h2 style="color:orange; text-align: center;margin-bottom: 20px;">From Our<span style="color:#ffff00"> Blogs</span></h2>
+      <p style="text-align: center;color: #CCC;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+</p>
+    <div class="blog">
+      <div class="blog3" style="width: 400px; height: 300px;">
+        <div class="hovereffect">
+            <img class="img-responsive" src="blog4.jpg" alt="" style="width: 500px; height: 300px;">
+              <div class="overlay">
+                  <h2 style="color: rgba(0, 98, 255, 0.904);" >Medical</h2>
+          
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+            </p>
+            <p>
+              <a class="read-more" href="blog-detail.html" style="text-align: center;">read more</a>
+            </p>
+              </div>
+      </div>
+  </div>
+  <div class="blog3" style="width: 400px; height: 300px;">
+    <div class="hovereffect">
+        <img class="img-responsive" src="blog4.jpg" alt="" style="width: 500px; height: 300px;">
+            <div class="overlay">
+                <h2 style="color: rgba(0, 98, 255, 0.904);" >Artifical Intelligence</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                </p>
+                <p>
+                  <a class="read-more" href="blog-detail.html" style="text-align: center;">read more</a>
+                </p>
+            </div>
+    </div>
+</div>
+<div class="blog3" style="width: 400px; height: 300px;">
+  <div class="hovereffect">
+      <img class="img-responsive" src="blog3.jpg" alt="" style="width: 500px; height: 300px;">
+          <div class="overlay">
+              <h2 style="color: rgba(0, 98, 255, 0.904);" >3d Printing</h2>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+              </p>
+              <p>
+                <a class="read-more" href="blog-detail.html" style="text-align: center;">read more</a>
+              </p>
+          </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Start Mission and upcomming section -->
+
+<section style="margin-top: 30px;">
+        <div class="shadow p-3 mb-5 bg-white rounded" style=" color: #06F; padding-top:30px; width:100%;font-size: 12px;">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 pb-sm-20" style="padding-left: 100px;">
+                      <h2 style="color:orange; text-align: center;margin-bottom: 20px;">New<span style="color:#ffff00"> Updates</span></h2>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                   <a class="media-left pull-left flip" href="#"><img src="medical.png" width="150px"></a>
+                   <div class="media-body">
+                    <h6  style=" padding-left: 190px;">Heading </h6>
+                    <p style=" padding-left: 160px; color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                    </p>                </div> 
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                              <a class="media-left pull-left flip" href="#"><img src="medical.png" width="150px"></a>
+                              <div class="media-body">
+                               <h6  style=" padding-left: 190px;">Heading </h6>
+                               <p style=" padding-left: 160px; color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                               </p>                </div> 
+                                       </div>
+                                       <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <a class="media-left pull-left flip" href="#"><img src="medical.png" width="150px"></a>
+                                        <div class="media-body">
+                                         <h6  style=" padding-left: 190px;">Heading </h6>
+                                         <p style=" padding-left: 160px; color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                                         </p>                </div> 
+                                                 </div>
+                                                 <div class="col-xs-12 col-sm-6 col-md-6">
+                                                  <a class="media-left pull-left flip" href="#"><img src="medical.png" width="150px"></a>
+                                                  <div class="media-body">
+                                                   <h6  style=" padding-left: 190px;">Heading </h6>
+                                                   <p style=" padding-left: 160px; color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                                                   </p>                </div> 
+                                                           </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Start right marquee section -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+       <h2 style="color:orange; text-align: center;margin-bottom: 20px;">Latest<span style="color:#ffff00"> News</span></h2>
+                      <hr width="60%" >
+              <hr style=" border-top: 2px solid orange; width:20%; margin-top:-18px; margin-left:0px">                         <p>
+
+                                <marquee style="color: black" direction="up" width="250" height="200" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at..<a href="" style="color: blue">More Details</a> <br><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.<a href="" style="color: blue">More Details</a> <br><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.<a href="" style="color: blue">More Details</a>                    
+                                </marquee>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    
+
+
+
+<!-- Start Footer -->
+
+<footer  class="footer" style="background-color:#333">
+    <div class="container" style="padding-top:60px; padding-bottom:10PX;">
+        <div class="row border-bottom-black">
+            <div class="col-sm-6 col-md-3">
+                <div class="widget dark" style="color: #bbb; ; font-size:14px">
+                  <div class="logofooter"> 
+                  <h2 style="color:orange; margin-bottom: 20px;">SEEKH<span style="color:#ffff00">-LO</span></h2>
+
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit,
+                     at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                      Lorem ipsum dolor sit amet,
+                     consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.</p>
+                  <p><i class="fa fa-map-pin"></i> 210,Karachi Pakistan</p>
+                  <p><i class="fa fa-phone"></i> Phone (Pakistan) : +92 9999 878 398</p>
+                  <p><i class="fa fa-envelope"></i> E-mail : Seekh-lo @gmail.com</p>
+
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="widget dark" style="color: white">
+                    <h3 class="">Recent Blogs</h3>
+                                      <hr style=" border-top: 2px solid grey;">
+              <hr style=" border-top: 2px solid orange; width:20%; margin-top:-18px; margin-left:0px">
+            <span><img src="medical.png" width="100px"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="blog.html">Read more</a></p>
+            <span><img src="medical.png" width="100px"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="blog-detail.html">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="widget dark" style="color: white;">
+                  <h3 class="">Useful Links</h3>
+                                    <hr style=" border-top: 2px solid grey;">
+            <hr style=" border-top: 2px solid orange; width:20%; margin-top:-18px; margin-left:0px">
+            <ul class="list-group ">
+              <li class="Useful-Link "><a href="index.html"><i class="fas fa-arrow-right" id="fas"></i>Home</a></li>
+              <li class="Useful-Link"><a href="about-us.html"><i class="fas fa-arrow-right" id="fas"></i>About Us</a></li>
+              <li class="Useful-Link" ><a href="#"><i class="fas fa-arrow-right" id="fas"></i>Term & Services</a></li>
+              <li  class="Useful-Link"><a href="#"><i class="fas fa-arrow-right" id="fas"></i>Priacy Policy</a></li>
+            </ul>
+              </div>
+          </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="widget dark"style="color: white">
+                  <h3 class="">Subscribe Us!</h3>
+                  <form action="/examples/actions/confirmation.php" method="post">
+
+                  <input type="text" class="form-control" id="control" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="button-addon2" required="required">
+                  <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Subscribe Us</button>
+</form>
+                    <h3 class="" style="margin-top: 30px;">Connect With Us</h3>
+                    <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
+                        <li><a href="" ><i class="fab fa-facebook" id="fa"></i></a></li>
+                       <li><a href=""><i class="fab fa-twitter" id="fa"></i></a></li>
+                                <li><a href="" ><i class="fab fa-instagram " id="fa"></i></a></li>
+                                <li><a href="" ><i class="fab fa-youtube " id="fa"></i></a></li>
+                     </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <p class="bottom">Copyright © 2020 Seekh-lo.edu.com </p>
+
+    </div>
+   
+
+</footer>
+
+
+</body>
+</html>

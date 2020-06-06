@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Seekh-lo</title>
+
+    <link rel="shortcut icon" href="F:/html/Seekh-lo/images/public/seekh-icon (1).ico" />
+    <link rel="stylesheet" href="F:/html/Seekh-lo/main css/style.css">
+
+
+
+    <meta charset="utf-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+      
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  
+    <style>
+
+a:hover {
+        text-decoration:none;
+      color: #80ccff;
+      border:#009;
+      border:thick;
+    }
+      a{
+        color:#CCC;
+        }
+    </style>
+    </head>
+  
+
+	<body>
+   
+    <!-- Start header -->
+
+    <div class="header">
+        <div class="header-left" >
+          <a href="file:///F:/html/Seekh-lo/public/index.html"><img src="F:/html/Seekh-lo/images/SEEKH.png" style="height: 40px; margin-bottom: 10px; margin-top: 10px;"></a>
+      
+       </div>
+       <!-- Modal sign in -->
+<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <div class="modal-header text-center">
+      <h3 class="modal-title w-100 orange-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body mx-4">
+      <!--Body-->
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="form-group">
+
+      <div class="md-form form-lg">
+<input type="email" class="form-control" name="username" placeholder="Email" required="required">
+      </div>
+        </div>
+        <div class="form-group">
+
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+            Password?</a></p>
+        </div>
+      <div class="text-center mb-3">
+
+        <button type="submit" class="btn btn-outline-info btn-rounded waves-effect" id="singnin">Sign in</button>
+      </div>
+      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+        with:</p>
+
+      <div class="row my-3 d-flex justify-content-center">
+        <!--Facebook-->
+        <button type="button" class="btn btn btn-rounded mr-md-2 z-depth-1a" id="icn"><i class="fab fa-facebook-f text-center"></i></button>
+        <!--Twitter-->
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a" id="icn"><i class="fab fa-twitter"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-white btn-rounded z-depth-1a" id="icn"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+    </div>
+  </form>
+    <!--Footer-->
+    <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" data-toggle="modal" data-target="#RgistrationForm" class="blue-text ml-1">
+          Sign Up</a></p>
+    </div>
+  </div>
+  <!--.Content-->
+</div>
+</div>
+<!-- Modal Registration -->
+<div class="modal fade" id="RgistrationForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <div class="modal-header text-center">
+      <h3 class="modal-title w-100 orange-text font-weight-bold my-3" id="myModalLabel"><strong>Register Now</strong></h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body mx-4">
+      <!--Body-->
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="form-group">
+          <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;<div class="col-xs-5">
+            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
+            </div>
+            &nbsp;&nbsp;            <div class="col-xs-5">
+              <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
+            </div>
+          </div>        	
+            </div>
+        <div class="form-group">
+      <div class="md-form form-lg">
+<input type="email" class="form-control" name="username" placeholder="Email" required="required">
+      </div>
+        </div>
+        <div class="form-group">
+
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+            Password?</a></p>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </div>
+      <div class="text-center mb-3">
+
+        <button type="submit" class="btn btn-outline-info btn-rounded waves-effect" id="singnin">Register Now</button>
+      </div>
+      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Creat acount using:</p>
+
+      <div class="row my-3 d-flex justify-content-center">
+        <!--Facebook-->
+        <button type="button" class="btn btn btn-rounded mr-md-2 z-depth-1a" id="icn"><i class="fab fa-facebook-f text-center"></i></button>
+        <!--Twitter-->
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a" id="icn"><i class="fab fa-twitter"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-white btn-rounded z-depth-1a" id="icn"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+    </div>
+  </form>
+    <!--Footer-->
+    <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Already a member <a href="#" data-toggle="modal" data-target="#elegantModalForm" class="blue-text ml-1">
+          Log In</a></p>
+    </div>
+  </div>
+  <!--/.Content-->
+</div>
+</div>
+<!-- Modal registraton end -->
+        <div class="header-right" >
+  
+          <input type="button" id="top-btn" value="Login" onclick="msg()" data-toggle="modal" data-target="#elegantModalForm">
+
+          <input type="button" id="top-btn" value="Registration"  onclick="msg()" data-toggle="modal" data-target="#RgistrationForm">
+          
+        </button>
+
+        </div>   
+      </div>
+
+
+<!-- Start Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" style="margin-left:30px">
+        <li class="nav-item ">
+          <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+ 
+        <li class="nav-item dropdown">
+          <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/programs.html">  Programs       </a>
+          <div class="dropdown-menu"  >
+            <div class="dropdown dropright" >
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/science.html">Science </a>
+           <div class="dropdown-menu">
+              <div class="dropdown dropright" >
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/engineering,html.html">Pre Engneering</a>
+               
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/math.html">Mathemathic</a>   
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/physics.html">Physics </a>   
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/chemistry.html">Chemistry </a>   
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/vurdu.html">Urdu </a>   
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/islamiate.html">Islamic Studies </a>   
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/english.html">English </a>   
+               
+               
+                         </div>
+                  </div>     
+                    <div class="dropdown dropright" >
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/medical.html">Pre Medical</a>
+          
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/botany.html">Botany</a>   
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/zoology.html">Zoology </a>   
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/chemistry.html">Chemistry </a>   
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/physics.html">Physics </a>   
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/urdu.html">Urdu </a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/islamiate.html">Islamic Studies </a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/english.html">English </a>   
+          
+          
+                 </div>
+          </div> 
+          <div class="dropdown dropright" >
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computer.html">Computer Science</a>
+       
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/math.html">Mathemathic</a>   
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computer.html">Computer </a>   
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/physics.html">Physics </a>     
+              <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/urdu.html">Urdu </a>   
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/public/Seekh-lo/islamiate.html">Islamic Studies </a>   
+                      <a class="dropdown-item" id="drop" href="file:///F:/html/public/Seekh-lo/english.html">English </a>   
+       
+       
+                 </div>
+          </div> 
+      
+      
+                </div>
+         </div>
+         
+      
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/commerce.html">Commerce</a>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/Accounting.html">Accountancy</a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/Business%20Studies.html">Business Studies</a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/statistics.html">Statistics </a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/economics.html">Economics </a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/math.html">Mathemathic</a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/english.html">English </a>   
+      
+           </div>
+      </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/arts.html">Arts</a>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/histry.html">History</a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/Psychology.html">Psychology</a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/Philosophy.html">Philosophy </a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/economics.html">Economics </a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/political-Science.html">Political Science  </a>   
+             <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/english.html">English </a>   
+      
+           </div>
+      </div>
+      </div>
+         </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/courses.html">  Courses </a>
+    <div class="dropdown-menu"  >
+         <div class="dropdown dropright" >
+          <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computercourse.html">Computer Science</a>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computercourse.html">Html</a>   
+          <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computercourse.html">Java </a>   
+          <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computercourse.html">Javascript </a>   
+          <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computercourse.html"> C programming </a>   
+          <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/computercourse.html">Pythone </a>   
+
+             </div>
+      </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/public/datascience.html">Data Science</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/public/datascience.html">Artifical Intelligence</a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/public/datascience.html">Big Data </a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/public/datascience.html">Cloud Computing </a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/public/public/datascience.html"> Data Analysis </a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/public/datascience.html">Machine Learning </a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/public/datascience.html">Quantum Computing </a>   
+
+           </div>
+    </div>
+      <div class="dropdown dropright" >
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/artscourse.html">Arts</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/artscourse.html">Graphic Designing.</a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/artscourse.html">Interior Designing</a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/artscourse.html">Photography </a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/artscourse.html"> Web Designing. </a>   
+        <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/artscourse.html">3d Designing </a>   
+
+           </div>
+    </div>
+    <div class="dropdown dropright" >
+      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/language.html">Language</a>
+
+    <div class="dropdown-menu">
+      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/language.html">Urdu</a>   
+      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/language.html">English</a>   
+      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/language.html">Chinese</a>   
+      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/language.html">Japnese </a>   
+      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/language.html"> Italian </a>   
+      <a class="dropdown-item" id="drop" href="file:///F:/html/Seekh-lo/public/language.html">Spanish </a>   
+
+         </div>
+  </div>
+
+
+       </div>
+    
+   </li>
+
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/past-papers.html">  
+    Past Paper   
+    </a>
+    
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/mcqs.html">  Mcqs prep  </a>
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/online-quiz.html">  Online Quizs </a>
+   </li>
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/blog.html">  Blogs </a>
+   </li>   
+   <li class="nav-item dropdown">
+    <a class="nav-link"  id="drop"  href="file:///F:/html/Seekh-lo/public/about-us.html">   About Us   </a>
+   </li>   
+   
+      </ul>
+      <div class="box">
+        <div class="container-2">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" placeholder="Search..." />
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </nav>
+
+  <!-- Detail section -->
+  <img src="test-prep.jpg" class="d-block w-100" alt="..." height="250px" style="margin-top: 20px; margin-bottom: 20px;">
+  <div class="container" style="margin-bottom: 20px;">
+    <div class="row">
+    <div class="col-md-12 col-sm-6 "style="margin-top: 20px;"> 
+        <h2 style="color:orange; text-align: center;margin-bottom: 20px;">Verbal Reasoning</h2>
+        <p style="color: #CCC;">Verbal Ability Quiz online Test. these mcqs question are taken from our
+     General Knowledge Mcqs section. it consists of World Geography, Atmosphere, Science & Literature,
+      events Mcqs, Current Affairs Mcqs , Pakistan Affairs Mcqs, Authors and Bokks and International
+       Organizations. latest general knowledge Quizzes are also available. We guarantee that after 
+       clearing all of our Online Quizzes tests, You will be able to pass your exam/test with good grades/Marks
+        in GK portion of test. in each and every test conducted by Federal Public service commission, FPSC,
+         Khyber Pakhtunkhaw Pulic Service Commission KPPSC, Punjab Public Service Commission PPSC, 
+         Sindh Public Service Commission SPSC,Balochistan Public Service Commission BPSC,Azad Jamu & Kashmir
+          AJKPSC, National Testing Service of Pakistan NTS,Pak Army,Navy,PAF,ISSB and other organization there 
+          will be General Knowledge mcqs portion. When you have a good command on General Knowledge section.
+     you will be able to secure good marks in Gk portion of the test. Wish you Good Luck. </p>
+</div>
+</div>
+  </div>
+  <!-- Verbal Mcqs -->
+
+  <div class="container" style="margin-bottom: 20px;">
+    <div class="row">
+    <div class="col-md-8 col-sm-6 "style="margin-top: 20px;"> 
+Choose the word that is most nearly <span style="text-decoration: underline;">similar in meaning</span> to the word in capital letters. (<span style="color: #008000;">Find answers and explanation to the answers at the bottom of the page.</span>)</p>
+<p><strong>1.</strong> <strong>INTEGRITY</strong><br />
+(A) questioning<br />
+(B) transparency<br />
+(C) honesty<br />
+(D) sadness</p>
+<p><strong>2.</strong> <strong>PREROGATIVE</strong><br />
+(A) interrogative<br />
+(B) right<br />
+(C) wise<br />
+(D) casual</p>
+<p><strong>Choose the word that is most nearly <span style="text-decoration: underline;">opposite in meaning</span> to the word in capital letters.</strong></p>
+<p><strong>3.</strong> <strong>RESTIVE</strong><br />
+(A) easy<br />
+(B) calm<br />
+(C) hurry<br />
+(D) restless</p>
+<p><strong>4.</strong> <strong>PRODIGAL</strong><br />
+(A) wasteful<br />
+(B) confident<br />
+(C) neutral<br />
+(D) frugal</p>
+<p><strong>Choose the pair of words that best expresses a relationship similar to that expressed in the pairs of words in capital.</strong></p>
+<p><strong>5.</strong> <strong>TIGER : CARNIVOROUS</strong><br />
+(A) lion : jungle<br />
+(B) cat : house<br />
+(C) cow : herbivorous<br />
+(D) wolf : clever</p>
+<p><strong>6.</strong> <strong>CONSTELLATION : STARS</strong><br />
+(A) archipelago : islands<br />
+(B) city : country<br />
+(C) book : pen<br />
+(D) school : education</p>
+<p><strong>Fill in the blanks with suitable choices.</strong></p>
+<p><strong>7.</strong> We cannot predict whether he will go on a picnic or not. He is so __________ .<br />
+(A) deleterious<br />
+(B) offensive<br />
+(C) feckless<br />
+(D) capricious</p>
+<p><strong>8.</strong> He is __________ fame and money. He pursues research just as an amateur scientist.<br />
+(A) indifferent to<br />
+(B) enamoured of<br />
+(C) running for<br />
+(D) struggling for</p>
+<p><strong>9.</strong> Octopuses have not only large brains __________ also a well-developed nervous system.<br />
+(A) but<br />
+(B) and<br />
+(C) are<br />
+(D) and have</p>
+<p><strong>10.</strong> I hardly __________ meet him.<br />
+(A) ever<br />
+(B) never<br />
+(C) had ever<br />
+(D) had never</p>
+<p><strong>11.</strong> She wouldn&#8217;t ask you if she _________ not sure.<br />
+(A) was<br />
+(B) were<br />
+(C) has<br />
+(D) had</p>
+<p><strong>12.</strong> Don&#8217;t think there are no crocodiles because the water is calm. This is a<br />
+(A) Simple Sentence<br />
+(B) Compound sentence<br />
+(C) Complex sentence<br />
+(D) Mixed sentence</p>
+<p><strong>Read the following paragraphs carefully. Choose the correct answer from the options given below.</strong><br />
+These huge waves wreak terrific damage when they crash on the shores of distant lands or continents. Under a perfectly sunny sky and from an apparently calm sea, a wall of water may break twenty or thirty feet high over beaches and waterfronts, crushing houses and drowning unsuspecting residents and bathers in its path. How are these waves formed? When a submarine earthquake occurs, it is likely to set up a tremendous amount of shock, disturbing the quite waters of the deep ocean.</p>
+<p><strong>13.</strong> One surprising aspect of the waves discussed in the passage is the fact that they<br />
+(A) are formed in concentric patterns<br />
+(B) often strike during clear weather<br />
+(C) arise under conditions of cold temperature<br />
+(D) are produced by deep swells</p>
+<p><strong>14.</strong> It is believed that the waves are caused by<br />
+(A) seismic changes<br />
+(B) concentric time belts<br />
+(C) underwater earthquakes<br />
+(D) storms</p>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-6 "style="margin-top: 20px;"> 
+                <div class="card card-body">
+                    <p><strong>ANSWERS:VERBAL REASONING</strong><br />
+                        1(C) 2(B) 3(A) 4(D) 5(C) 6(A) 7(D)<br />
+                        8(A) 9(A) 10(A) 11(B) 12(B) 13(B) 14(C)</p>
+                        <p style="text-align: center;"><strong>EXPLANATION</strong></p>
+                        <p><b>1. (C) </b>Integrity <sub><img src="https://www.sheir.org/v1.gif" /></sub> means honesty.<br />
+                        <b>2. (B) </b>Prerogative <sub><img src="https://www.sheir.org/v2.gif" /></sub> means right (or legal rights).<br />
+                        <b>3. (A) </b>Restive <sub><img src="https://www.sheir.org/v3.gif" /></sub> means restless or uneasy. So, easy is the antonym.<br />
+                        <b>4. (D) </b>Prodigal <sub><img src="https://www.sheir.org/v4.gif" /></sub> means wasteful (who spends too much). So, frugal <sub><img src="https://www.sheir.org/v5.gif" /></sub> (economic or one who spends with care) is the antonym.<br />
+                        <b>5. (C) </b>Tiger is carnivorous (meat eating) animal. And, cow is herbivorous (grass eating) animal.<br />
+                        <b>6. (A) </b>Constellation <sub><img src="https://www.sheir.org/v6.gif" /></sub> is made up of stars. And, archipelago is made up of islands.<br />
+                        <b>7. (D) </b>Cannot predict whether will go or not. So, he is unpredictable. Hence, capricious (unpredictable) is the best choice.<br />
+                        <b>8. (A) </b>Amateur <sub><img src="https://www.sheir.org/v7.gif" /></sub> (non-professional or unpaid worker) works without being paid. So, indifferent to <sub><img src="https://www.sheir.org/v8.gif" /></sub> (not interested) in fame and money is the best choice.<br />
+                        <b>9. (A) </b>not only &#8230;. but also. This is a conjunction.<br />
+                        <b>10. (A) </b>We cannot use negative word, never, with &#8216;hardly&#8217;. So, &#8216;ever&#8217; is the best choice.<br />
+                        <b>11. (B) </b>The verb, to be, will always appear as were in the present conditional.<br />
+                        <b>12. (B) </b>There are two clauses in the sentence. Hence, it is a compound sentence.<br />
+                        <b>13. (B) </b>Read this: Under a perfectly sunny sky and from an apparently calm sea, a wall of water may break.<br />
+                        <b>14. (C) </b>Read this: When a submarine earthquake occurs, it is likely to set up a tremendous amount of shock.</p>
+</div>    
+            </div>
+                </div>
+        </div>
+
+<!-- Start Footer -->
+<footer  class="footer" style="background-color:#333">
+  <div class="container" style="padding-top:60px; padding-bottom:10PX;">
+      <div class="row border-bottom-black">
+          <div class="col-sm-6 col-md-3">
+              <div class="widget dark" style="color: #bbb; ; font-size:14px">
+                <div class="logofooter"> 
+                <h2 style="color:orange; margin-bottom: 20px;">SEEKH<span style="color:#ffff00">-LO</span></h2>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit,
+                   at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.
+                    Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit. Sed mattis augue in odio suscipit, at.</p>
+                <p><i class="fa fa-map-pin"></i> 210,Karachi Pakistan</p>
+                <p><i class="fa fa-phone"></i> Phone (Pakistan) : +92 9999 878 398</p>
+                <p><i class="fa fa-envelope"></i> E-mail : Seekh-lo @gmail.com</p>
+
+                  
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+              <div class="widget dark" style="color: white">
+                  <h3 class="">Recent Blogs</h3>
+                                    <hr style=" border-top: 2px solid grey;">
+            <hr style=" border-top: 2px solid orange; width:20%; margin-top:-18px; margin-left:0px">
+          <span><img src="F:/html/Seekh-lo/images/medical.png" width="100px"></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="file:///F:/html/Seekh-lo/public/blog.html">Read more</a></p>
+          <span><img src="F:/html/Seekh-lo/images/medical.png" width="100px"></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="file:///F:/html/Seekh-lo/public/blog-detail.html">Read more</a></p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="widget dark" style="color: white;">
+                <h3 class="">Useful Links</h3>
+                                  <hr style=" border-top: 2px solid grey;">
+          <hr style=" border-top: 2px solid orange; width:20%; margin-top:-18px; margin-left:0px">
+          <ul class="list-group ">
+            <li class="Useful-Link "><a href="file:///F:/html/Seekh-lo/public/index.html"><i class="fas fa-arrow-right" id="fas"></i>Home</a></li>
+            <li class="Useful-Link"><a href="file:///F:/html/Seekh-lo/public/about-us.html"><i class="fas fa-arrow-right" id="fas"></i>About Us</a></li>
+            <li class="Useful-Link" ><a href="#"><i class="fas fa-arrow-right" id="fas"></i>Term & Services</a></li>
+            <li  class="Useful-Link"><a href="#"><i class="fas fa-arrow-right" id="fas"></i>Priacy Policy</a></li>
+          </ul>
+            </div>
+        </div>
+          <div class="col-sm-6 col-md-3">
+              <div class="widget dark"style="color: white">
+                <h3 class="">Subscribe Us!</h3>
+                <form action="/examples/actions/confirmation.php" method="post">
+
+                <input type="text" class="form-control" id="control" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="button-addon2" required="required">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Subscribe Us</button>
+</form>
+                  <h3 class="" style="margin-top: 30px;">Connect With Us</h3>
+                  <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
+                      <li><a href="" ><i class="fab fa-facebook" id="fa"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter" id="fa"></i></a></li>
+                              <li><a href="" ><i class="fab fa-instagram " id="fa"></i></a></li>
+                              <li><a href="" ><i class="fab fa-youtube " id="fa"></i></a></li>
+                   </ul>
+              </div>
+
+          </div>
+
+      </div>
+      <p class="bottom">Copyright © 2020 Seekh-lo.edu.com </p>
+
+  </div>
+ 
+
+</footer>
+
+
+</body>
+</html>
